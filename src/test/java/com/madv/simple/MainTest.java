@@ -1,16 +1,16 @@
 package com.madv.simple;
 
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeFalse;
-
+@Log4j2
 class MainTest {
 
     @AfterEach
     void tearDown() {
-        System.out.println("Тест завершился.");
+        log.info("Тест завершился.");
     }
 
     @Test
